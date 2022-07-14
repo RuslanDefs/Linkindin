@@ -1,0 +1,810 @@
+/* @import "/css/theme.css" all; */
+/* Стандартные стили для сайта начало */
+@font-face {
+	font-family: 'Gotham-Pro';
+	src: url(../fonts/GothamPro/GothamPro.woff); 
+}
+@font-face {
+	font-family: 'Adobe-Clean';
+	src: url(../fonts/AdobeClean/AdobeClean-Regular.woff); 
+}
+
+
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+input[type=file]{
+	display: none;
+}
+span{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+ol{
+	margin: 0;
+	padding: 0;
+}
+svg{
+	fill: transparent;
+	transition: all 0.2s;
+}
+button, input, textarea{
+	border: none;
+	outline: none;
+	resize: none;
+	margin: 0;
+	padding: 0;
+	font-family: 'Adobe-Clean';
+}
+button{
+    background: none;
+    cursor: pointer;
+	font-size: 12px;
+}
+h1,h2,h3,h4,h5,p{
+	margin: 0;
+}
+.d-flex{
+	display: flex;
+}
+.a-center{
+	align-items: center;
+}
+.a-end{
+	align-items: flex-end;
+}
+.j-between{
+	justify-content: space-between;
+}
+.fl-direction{
+	flex-direction: column;
+}
+.fl-wrap{
+	flex-wrap: wrap;
+}
+.j-center{
+	justify-content: center;
+}
+.fullscreen{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+.no-scroll::-webkit-scrollbar{
+	width: 0;
+}
+.m-auto{
+	margin: 0 auto;
+}
+.ml-auto{
+	margin-left: auto;
+}
+.fluid-content{
+	padding: 0 30px;
+}
+.hidden{
+	overflow: hidden;
+}
+.container{
+	min-width: 1158px;
+	position: relative;
+	padding: 0 10px;
+}
+.container-main{
+	max-width: 1600px;
+}
+
+
+
+a{
+	display: block;
+    text-decoration: none;
+	color: #3C3C3C;
+	position: relative;
+	font-family: 'Gotham-Pro';
+	transition: all 0.2s;
+}
+body{
+    padding: 0;
+    margin: 0;
+	color: #484848;
+	background: #F7F9FB;
+	font-family: 'Gotham-Pro';
+	font-size: 12px;
+}
+/* Стандартные стили для сайта конец */
+/* Стили для хедера начало */
+.header{
+	background: #fff;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1;
+}
+.header-inner{
+	height: 80px;
+}
+.header .logo a{
+	width: 130px;
+	height: 100%;
+	padding: 30px;
+	border-right: 1px solid rgba(0, 0, 0, 0.137);
+}
+.logo a svg{
+	width: 100%;
+	height: 100%;
+}
+.nav{
+	margin: 0 20px;
+}
+.nav ul{
+	min-width: 450px;
+}
+.nav li a{
+	border-bottom: 2px solid transparent;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+	position: relative;
+	padding: 15px 26px;
+}
+.nav li a.active{
+	border-bottom: 2px solid #0077B5;
+	font-weight: 700;
+	color: #0077B5;
+}
+.nav li a:hover{
+	border-bottom: 2px solid #0077B5;
+}
+.nav li a svg{
+	width: 24px;
+	height: 24px;
+	margin-bottom: 10px;
+}
+.nav li a .quantity{
+	position: absolute;
+    width: 16px;
+    height: 16px;
+    background: linear-gradient(215.49deg, #FFB75E 5.4%, #ED8F03 93.45%);
+    color: #fff;
+    font-size: 8px;
+    border-radius: 100%;
+    top: 9px;
+    right: 27px;
+}
+.search{
+	width: 367px;
+	padding: 0 30px;
+	position: relative;
+	border: 1px solid #F4F4F4;
+}
+.search button{
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+}
+.search button svg{
+	width: 100%;
+	height: 100%;
+}
+.profile{
+	width: 330px;
+	padding: 0 30px;
+}
+.profile-info{
+	margin-left: 15px;
+}
+.u-name{
+	margin-bottom: 7px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.view{
+	min-width: 100px;
+	color: #747474;
+	font-size: 12px;
+}
+.mograph{
+	margin-left: 4px;
+	font-weight: 700;
+	color: #02B033;
+}
+.other{
+	position: relative;
+	margin-left: auto;
+}
+.other button, .other a{
+	width: 90px;
+	height: 100%;
+	text-align: center;
+	border: 1px solid #F4F4F4;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+/* Стили для хедера конец */
+/* Стили для popup начало */
+.overlay{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 300ms;
+    opacity: 0;
+    pointer-events: none;
+	
+}
+.popup-active {
+    opacity: 1;
+    pointer-events: all;
+}
+.popup{
+	font-family: 'Adobe-Clean';
+	width: 638px;
+	height: 300px;
+    z-index: 2;
+    border-radius: 5px;
+    box-shadow: 0px 15px 15px rgb(0 0 0 / 15%);
+    background: #fff;
+}
+.overlay-setting .popup{
+	padding: 39px;
+}
+.popup-heading{
+	padding: 10px;
+	font-size: 14px;
+}
+.upload label{
+	width: 100%;
+	color: #fff;
+	padding: 10px;
+	border-radius: 0;
+	cursor: pointer;
+	font-size: 13px;
+}
+.setting-control{
+	width: 100%;
+}
+.setting-control input{
+	width: 100%;
+}
+/* Стили для popup конец */
+/* Стили для основной страницы начало */
+.alert-overlay{
+	opacity: 1;
+}
+.alert{    
+    background: #27aaf0;
+	position: fixed;
+	top: 50%;
+	right: 50%;
+	z-index: 2;
+	min-width: 300px;
+}
+.alert .message{
+	color: #fff;
+	padding: 10px;
+	font-size: 11px;
+}
+.app-content{
+	width: 826px;
+}
+.heading a{
+	color: #0275B1;
+	line-height: 20px;
+}
+.heading p{
+	margin: 0 5px;
+	line-height: 20px;
+}
+.heading p:last-child{
+	margin: 0;
+}
+#loader{
+	margin-top: 10px;
+}
+#delete{
+	position: absolute;
+	right: 7px;
+	top: 7px;
+	color: #fff;
+}
+#delete svg{
+	fill: #F4F4F4;
+	width: 20px;
+	height: 20px;
+}
+.loader-container{
+	background: #747474;
+	width: 110px;
+	height: 8px;
+	border-radius: 4px;
+	position: relative;
+	overflow: hidden;
+}
+.loader-progressbar{
+	height: 100%;
+	background: #2e87f5;
+	position: absolute;
+}
+.fluid-controls input{
+	width: 50%;
+}
+.files{
+	margin-top: 10px;
+}
+.files img,
+.files video{
+	width: 100%;
+	object-fit: cover;
+}
+.file-name{
+	margin-left: 15px;
+	font-family: 'Adobe-Clean';
+}
+.fluid-post{
+	margin-top: 10px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.fluid-post img{
+	width: 100%;
+}
+.fluid-post .title{
+	margin-bottom: 10px;
+}
+.post{
+	position: relative;
+}
+.post-user__info{
+	margin-left: 20px;
+}
+.post-user__name{
+	font-size: 14px;
+	margin-bottom: 5px;
+	font-weight: 700;
+}
+.post-user__status{
+	font-size: 10px;
+	font-weight: 400;
+}
+.post-date{
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+.post-avatar{
+	width: 52px;
+	height: 52px;
+	overflow: hidden;
+	border-radius: 100%;
+}
+.post-avatar img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.post-img{
+	width: 100%;
+	height: 300px;
+	margin-top: 15px;
+}
+.post-img img:is{
+	display: none;
+}
+.post-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.post-decription{
+	margin-top: 15px;
+	line-height: 150%;
+	max-height: 65px;
+	overflow: hidden;
+	font-size: 14px;
+}
+.post-decription:empty{
+	display: none;
+}
+.post-decription.active{
+	max-height: fit-content;
+	background-image: linear-gradient(180deg, #181818 100%, rgba(24, 24, 24, 0) 100%) !important;
+}
+.heading-controls{
+	position: relative;
+}
+.heading-controls button{
+	z-index: 1;
+}
+.heading-controls:hover .controls-menu,
+.other:hover .controls-menu{
+	opacity: 1;
+	pointer-events: none;
+	transform: translateY(-3px);
+}
+.controls-menu{
+	opacity: 0;
+	pointer-events: all;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    top: 100%;
+	width: 172px;
+	padding: 6px 0;
+	border-radius: 4px;
+	box-shadow: 0 20px 40px rgb(0 0 0 / 32%);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.controls-menu button,
+.controls-menu a{
+	padding: 3px 17px;
+	color: rgb(71, 71, 71);
+}
+.app{
+	margin-top: 140px;
+}
+.fluid{
+	margin-bottom: 20px;
+}
+.fluid{
+	background: #ffff;
+}
+.heading{
+	border-bottom: 1px solid #F4F4F4;
+	padding: 25px 30px;
+}
+.footing{
+	border-top: 1px solid #F4F4F4;
+}
+.fluid-content{
+	padding: 30px;
+}
+.ui-controls{
+	min-width: 178px;
+}
+.ui-controls button{
+	width: 32px;
+	height: 32px;
+	padding: 4px;
+    border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+}
+.ui-controls button.error{
+	background: red;
+}
+.error{
+	color: red;
+}
+.error::placeholder{
+	color: red;
+}
+.button-bg{
+	background: #2e87f5;
+	padding: 10px 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+.section-name{
+	width: fit-content;
+	padding: 30px 0;
+	text-transform: uppercase;
+}
+.section-name span{
+	font-weight: 700;
+	position: relative;
+}
+.section-name a{
+	font-weight: 400;
+	margin-left: 4px;
+	color: #0077B5;
+}
+.contrtol span{
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.contrtol button svg{
+	width: 15px;
+	height: 15px;
+}
+.contrtol button{
+	margin-right: 8px;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.contrtol button:hover{
+	transform: translateY(-3px);
+}
+.contrtol{
+	border: 1px solid #F4F4F4;
+	padding: 20px;
+}
+.read-more{
+	margin-top: 15px;
+}
+.read-more button{
+	text-transform: uppercase;
+	color: rgb(0, 102, 255);
+}
+.active svg{
+	fill: #0077B5;
+}
+.file{
+	background: #E9F0F8;
+    border-radius: 4px;
+	padding: 19px 20px;
+	margin-bottom: 15px;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	cursor: pointer;
+}
+.file:hover{
+	transform: translateY(-3px);
+}
+.file:last-child{
+	margin-bottom: 0;
+}
+.file-info{
+	margin-left: 15px;
+}
+.file-title{
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 150%;
+	margin-bottom: 5px;
+}
+.file-icon{
+	border-radius: 100px;
+	width: 42px;
+    height: 42px;
+	background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+}
+.file-icon svg{
+	width: 20px;
+	height: 20px;
+}
+.load{
+	width: fit-content;
+}
+/* Стили для основной страницы конец */
+/* Стили для страницы входа начало */
+.form{
+	width: 352px;
+	background: #fff;
+	box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+    padding: 24px;
+	border-radius: 6px;
+}
+.form-heading p{
+	font-size: 15px;
+}
+.form a{
+	margin-top: 15px;
+	font-size: 14px;
+}
+.form-group{
+	width: 100%;
+}
+.form-group input{
+	font-size: 14px;
+    color: rgba(0,0,0,0.9);
+    height: 42px;
+    padding: 11px 20px;
+    border-radius: 4px;
+	border: 1px solid rgba(0,0,0,0.6);
+	margin-top: 15px;
+}
+.form button{
+	font-size: 15px;
+	padding: 11px 24px;
+	border-radius: 4px;
+	background-color: #1785e5;
+	color: #ffff;
+	width: 100%;
+	margin-top: 15px;
+	box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+}
+.auth{
+	width: 100%;
+}
+.auth button svg{
+	width: 20px;
+	height: 20px;
+}
+.auth button span{
+	margin-left: 10px;
+}
+.message{
+	width: fit-content;
+	font-size: 14px;
+    font-weight: 600;
+    color: #d11124;
+}
+/* Стили для страницы входа конец */
+/* Стили для футера начало */
+.footer{
+	border-top: 1px solid #F4F4F4;
+	background: linear-gradient(180deg, rgba(241, 244, 248, 0.8) 0%, rgba(241, 244, 248, 0) 100%);
+	padding: 35px 0 53px 0;
+	margin-top: 40px;
+}
+.navigation-wrapper{
+	min-width: 485px;
+}
+.logo a span{
+	margin-top: 12px;
+}
+.setting{
+	width: 170px;
+}
+.setting button{
+	width: 100%;
+	padding: 11px 15px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	border: 1px solid #27aaf0;
+}
+.setting button{
+	margin-bottom: 15px;
+}
+.setting button:last-child{
+	margin-bottom: 0;
+}
+.blue{
+	color: #fff;
+	background: #27aaf0;
+	padding: 10px;
+}
+.footer-list li{
+	margin-bottom: 20px;
+}
+.footer-list li:last-child{
+	margin-bottom: 0;
+}
+.footer-list li a{
+	font-size: 12px;
+	font-weight: 400;
+}
+.footer-title{
+	margin-bottom: 25px;
+	font-size: 12px;
+	font-weight: 700;
+}
+/* Стили для футера конец */
+/* Стили для сайдбара начало */
+.aside{
+	width: 280px;
+	right: 0;
+}
+.user-profile{
+	width: 100%;
+	position: relative;
+}
+.cover img{
+	width: 100%;
+	object-fit: cover;
+}
+.aside-profle{
+	text-align: center;
+	width: 100%;
+	background: #fff;
+}
+.profile-avatar{
+	border: 2px solid #fff;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	margin-bottom: 16px;
+	margin-top: -57px;
+}
+.profile-avatar img{
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border: 4px solid #fff;
+	border-radius: 100%;
+}
+.profile-title{
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.profile-decrtiption{
+	font-size: 10px;
+	line-height: 150%;
+}
+.profile-setting{
+	width: 100%;
+	border-radius: 4px;
+}
+.profile-setting button{
+	width: 100%;
+}
+.aside-content{
+	background: #fff;
+	padding: 20px 30px;
+	margin-bottom: 15px;
+}
+.user-group button{
+	text-transform: uppercase;
+	color: #27aaf0;
+	font-weight: 400;
+}
+.user-group .heading{
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.group-item{
+	border: 1px solid #F4F4F4;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+.group-item:last-child{
+	margin-bottom: 0;
+}
+.group-img{
+	width: 52px;
+	height: 52px;
+	overflow: hidden;
+	border-radius: 100%;
+}
+.group-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.group-name{
+	font-weight: 700;
+	max-width: 99px;
+	font-size: 14px;
+    line-height: 125%;
+	margin-left: 15px;
+}
+.group-list{
+	margin-top: 20px;
+	max-height: 262px;
+	overflow: auto;
+}
+.group-list.active{
+	max-height: fit-content;
+	overflow: visible;
+}
+.aside-content .heading{
+	padding: 0;
+	padding-bottom: 20px;
+}
+.all-group{
+	margin-top: 15px;
+}
+.tag{
+	margin-top: 15px;
+}
+.tag a{
+	padding: 7px 14px;
+	background: #E9F0F8;
+    border-radius: 4px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}

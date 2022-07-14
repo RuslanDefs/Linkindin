@@ -1,0 +1,96 @@
+/* html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+input[type=file]{
+	display: none;
+}
+span{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+ol{
+	margin: 0;
+	padding: 0;
+}
+svg{
+	fill: transparent;
+	transition: all 0.2s;
+}
+button, input, textarea{
+	border: none;
+	outline: none;
+	resize: none;
+	margin: 0;
+	padding: 0;
+	font-family: 'Adobe-Clean';
+}
+button{
+    background: none;
+    cursor: pointer;
+	font-size: 12px;
+}
+h1,h2,h3,h4,h5,p{
+	margin: 0;
+}
+.d-flex{
+	display: flex;
+}
+.a-center{
+	align-items: center;
+}
+.a-end{
+	align-items: flex-end;
+}
+.j-between{
+	justify-content: space-between;
+}
+.fl-direction{
+	flex-direction: column;
+}
+.fl-wrap{
+	flex-wrap: wrap;
+}
+.j-center{
+	justify-content: center;
+}
+.fullscreen{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+.no-scroll::-webkit-scrollbar{
+	width: 0;
+}
+.m-auto{
+	margin: 0 auto;
+}
+.ml-auto{
+	margin-left: auto;
+}
+.fluid-content{
+	padding: 0 30px;
+}
+.hidden{
+	overflow: hidden;
+}
+.container{
+	min-width: 1158px;
+	position: relative;
+	padding: 0 10px;
+}
+.container-main{
+	max-width: 1600px;
+} */

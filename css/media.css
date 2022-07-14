@@ -1,0 +1,117 @@
+@media(max-width: 1300px){
+    .nav ul{
+        display: none;
+    }
+    .profile{
+        width: fit-content;
+        margin-left: auto;
+        padding: 0;
+    }
+    .container{
+        min-width: 100%;
+    }
+    .group-name{
+        font-size: 11px;
+    }
+    .aside{
+        display: none;
+    }
+    .search{
+        padding: 0;
+        border: none;
+    }
+
+}
+@media(max-width: 850px){
+    .profile{
+        display: none;
+    }
+    .header-inner {
+        height: 50px;
+    }
+    .header .logo a{
+        padding: 0 20px;
+    }
+    .logo a{
+        width: 62px !important;
+    }
+    .footer .logo a{
+        width: 21px !important;
+    }
+    .app-content{
+        width: 100%;
+    }
+    .fluid-content{
+        padding: 20px;
+    }
+    .heading{
+        padding: 20px;
+    }
+    .fluid{
+        margin-bottom: 10px;
+    }
+    .fluid .fluid-controls input{
+        width: 100%;
+        font-size: 10px;
+    }
+    .fluid .fluid-controls .ui-controls{
+        margin-top: 10px;
+        width: 28%;
+    }
+    .contrtol{
+        padding: 15px;
+    }
+    .contrtol button svg{
+        width: 12px;
+        height: 12px;
+    }
+    .section-name {
+        padding: 20px 0;
+    }
+    .ui-controls button{
+        background: rgb(0 0 0 / 8%);
+    }
+    .ui-controls button svg{
+        width: 13px;
+        height: 13px;
+    }
+    .post-decription{
+        font-size: 11px;
+    }
+    .post-avatar{
+        width: 30px;
+        height: 30px;
+    }
+    .other button, .other a{
+        font-size: 11px;
+    }
+    .other button svg{
+        display: none;
+    }
+    .app{
+        margin-top: 68px;
+    }
+    .post-user__status{
+        max-width: 300px;
+        height: 10px;
+        overflow: hidden;
+    }
+    .footer-inner{
+        flex-direction: column;
+    }
+    .footer-list{
+        margin-bottom: 15px;
+    }
+    .footer .logo {
+        margin-bottom: 20px;
+    }
+    .navigation-wrapper{
+        min-width: 100%;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    .setting{
+        width: 100%;
+        margin: 20px 0;
+    }
+}
