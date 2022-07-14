@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная</title>
+	<!-- Подключение стилей начало -->
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/media.css" rel="stylesheet">
+	<!-- Подключение стилей конец -->
+</head>
+<body>
+<!-- <div class="overlay alert-overlay">
+	<div class="alert d-flex j-center a-center">
+		<div class="message">
+			<p>Сообщение отправлено</p>
+		</div>
+	</div>
+</div> -->
+<header class="header">
+	<div class="container-main m-auto">
+		<div class="header-inner d-flex">
+			<div class="logo">
+				<a class="d-flex a-center j-center" href="#">
+					<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M2.5262 2.5262C0 5.05241 0 9.11827 0 17.25V28.75C0 36.8817 0 40.9476 2.5262 43.4738C5.05241 46 9.11827 46 17.25 46H28.75C36.8817 46 40.9476 46 43.4738 43.4738C46 40.9476 46 36.8817 46 28.75V17.25C46 9.11827 46 5.05241 43.4738 2.5262C40.9476 0 36.8817 0 28.75 0H17.25C9.11827 0 5.05241 0 2.5262 2.5262ZM11.4811 14.4099C9.58715 14.4099 8.05 12.8571 8.05 10.9425C8.05 9.02789 9.58715 7.475 11.4811 7.475C13.3751 7.475 14.9123 9.02789 14.9123 10.9425C14.9123 12.8571 13.3771 14.4099 11.4811 14.4099ZM8.54016 38.525V16.9024H14.4221V38.525H8.54016ZM32.068 38.525H37.95V25.2389C37.95 14.9132 26.9644 15.2886 24.2254 20.3719V16.9024H18.3434V38.525H24.2254V27.5093C24.2254 21.3901 32.068 20.8889 32.068 27.5093V38.525Z" fill="url(#paint0_linear_4301_39)"></path>
+						<defs>
+						<linearGradient id="paint0_linear_4301_39" x1="23" y1="0" x2="23" y2="46" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#0077B5"></stop>
+						<stop offset="1" stop-color="#0E6795"></stop>
+						</linearGradient>
+						</defs>
+					</svg>
+				</a>
+			</div>
+			<div class="nav d-flex a-center">
+				<ul class="d-flex j-between">
+					<li>
+						<a class="d-flex fl-direction a-center active" href="#">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4 11C6.38695 11 8.67613 11.9482 10.364 13.636C12.0518 15.3239 13 17.6131 13 20" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M4 4C8.24346 4 12.3131 5.68571 15.3137 8.68629C18.3143 11.6869 20 15.7565 20 20" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M5 20C5.55228 20 6 19.5523 6 19C6 18.4477 5.55228 18 5 18C4.44772 18 4 18.4477 4 19C4 19.5523 4.44772 20 5 20Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							feed
+						</a>
+					</li>
+					<li>
+						<a class="d-flex fl-direction a-center" href="#">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							Network
+						</a>
+					</li>
+					<li>
+						<a class="d-flex fl-direction a-center" href="#">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							jobs
+						</a>
+					</li>
+					<li>
+						<a class="d-flex fl-direction a-center" href="#">
+							<span class="quantity d-flex a-center j-center">
+								1
+							</span>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							chat
+						</a>
+					</li>
+					<li>
+						<a class="d-flex fl-direction a-center" href="#">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M13.73 21C13.5542 21.3031 13.3018 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							notices
+						</a>
+					</li>
+				</ul>
+			</div>
+			<form action="#" class="search d-flex a-center">
+				<button type="submit">
+					<svg width="28" height="30" viewBox="0 0 28 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g filter="url(#filter0_d_4301_63)">
+						<path d="M13 19C17.4183 19 21 15.4183 21 11C21 6.58172 17.4183 3 13 3C8.58172 3 5 6.58172 5 11C5 15.4183 8.58172 19 13 19Z" stroke="#0275B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M23 21L18.65 16.65" stroke="#0275B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</g>
+						<defs>
+						<filter id="filter0_d_4301_63" x="-2" y="0" width="32" height="32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+						<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+						<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+						<feOffset dy="4"/>
+						<feGaussianBlur stdDeviation="2"/>
+						<feComposite in2="hardAlpha" operator="out"/>
+						<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+						<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4301_63"/>
+						<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4301_63" result="shape"/>
+						</filter>
+						</defs>
+					</svg>
+				</button>
+				<input type="text" name="search" placeholder="Search">
+			</form>
+			<div class="profile d-flex a-center">
+				<div class="avatar">
+					<img src="img/pictures/img-1.jpg" alt="img">
+				</div>
+				<div class="profile-info">
+					<div class="u-name">
+						D. Kargaev
+					</div>
+					<div class="view d-flex j-between">
+						<span>367</span>
+						<p>views today</p>
+						<span class="mograph">
+							+32
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.50021 8.50019L8.50022 3.50018" stroke="#02B033" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M3.50021 3.50018H8.50022V8.50019" stroke="#02B033" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="other">
+				<button class="d-flex fl-direction j-center a-center">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12C18 12.5523 18.4477 13 19 13Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					other
+				</button>
+				<div class="controls-menu">
+					<a href="index.html">exit</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<main class="app d-flex">
+	<div class="container m-auto d-flex j-between" id="app">
+		<div class="app-content">
+			<div class="fluid">
+				<div class="heading">
+					<p>new post</p>
+				</div>
+				<div class="fluid-content">
+					<div class="fluid-controls d-flex j-between fl-wrap">
+						<input class="post-name" id="title" type="text" name="post" placeholder="Whats on your mind?">
+						<div class="ui-controls d-flex j-between">
+							<button class="triger-file">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g opacity="0.15">
+									<path d="M21 11.4384L12.8446 19.4644C11.8455 20.4476 10.4904 21 9.07749 21C7.66455 21 6.30948 20.4476 5.31039 19.4644C4.31129 18.4811 3.75 17.1476 3.75 15.7571C3.75 14.3665 4.31129 13.033 5.31039 12.0497L13.4658 4.02375C14.1319 3.36825 15.0352 3 15.9772 3C16.9192 3 17.8225 3.36825 18.4886 4.02375C19.1547 4.67924 19.5289 5.56829 19.5289 6.4953C19.5289 7.42231 19.1547 8.31135 18.4886 8.96685L10.3243 16.9928C9.99129 17.3206 9.5396 17.5047 9.06862 17.5047C8.59764 17.5047 8.14595 17.3206 7.81291 16.9928C7.47988 16.6651 7.29279 16.2206 7.29279 15.7571C7.29279 15.2935 7.47988 14.849 7.81291 14.5213L15.3471 7.11537" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</g>
+								</svg>
+							</button>
+							<button>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g opacity="0.15">
+									<path d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M8.5 10C9.32843 10 10 9.32843 10 8.5C10 7.67157 9.32843 7 8.5 7C7.67157 7 7 7.67157 7 8.5C7 9.32843 7.67157 10 8.5 10Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M21 15L16 10L5 21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</g>
+								</svg>
+							</button>
+							<button>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g opacity="0.15">
+									<path d="M19.038 3H4.962C3.87842 3 3 3.87842 3 4.962V19.038C3 20.1216 3.87842 21 4.962 21H19.038C20.1216 21 21 20.1216 21 19.038V4.962C21 3.87842 20.1216 3 19.038 3Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M7.50053 3V21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M16.5 3V21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M3 12.0003H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M3 7.50043H7.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M3 16.5H7.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M16.5 16.5H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M16.5 7.50043H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</g>
+								</svg>
+							</button>
+							<button class="button-bg" id="sendPost">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.6667 1.33331L7.33333 8.66665" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M14.6667 1.33331L10 14.6666L7.33333 8.66665L1.33333 5.99998L14.6667 1.33331Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<!-- место для прелоадера -->
+
+					<!-- место для прелоадера -->
+					<div class="filesPost">
+				
+					</div>
+				</div>
+			</div>
+			<div id="user-post">
+
+			</div>
+			<div class="section-name m-auto">
+				<span class="d-flex">
+					sort by: <a href="#">trending</a>
+					<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M3.5 5.25L7 8.75L10.5 5.25" stroke="#0275B1" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</span>
+			</div>
+			<div class="posts" id="posts">
+				<div class="fluid post">
+					<div class="heading d-flex j-between">
+						<div class="heading-info d-flex">
+							<p>High rated post from your feed</p>
+						</div>
+						<div class="heading-controls">
+							<button>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12C18 12.5523 18.4477 13 19 13Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+							<div class="controls-menu">
+								<button>unrecomended</button>
+								<button>add to post</button>
+							</div>
+						</div>
+					</div>
+					<div class="fluid-content">
+						<div class="post">
+							<div class="user-post d-flex a-center">
+								<div class="post-avatar">
+									<img src="img/pictures/img-5.jpg" alt="img">
+								</div>
+								<div class="post-user__info d-flex fl-direction">
+									<span class="post-user__name">Brandon Wilson</span>
+									<span class="post-user__status">Senior UX designer</span>
+								</div>
+							</div>
+							<div class="post-content">
+								<div class="post-decription">
+									There is some new guidelines for iOS
+								</div>
+								<div class="post-file">
+									<div class="file d-flex a-center">
+										 <div class="file-icon d-flex a-center j-center">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.0002 2.00009H6.00018C5.46975 2.00009 4.96104 2.21081 4.58597 2.58588C4.2109 2.96095 4.00018 3.46966 4.00018 4.00009V20.0001C4.00018 20.5305 4.2109 21.0392 4.58597 21.4143C4.96104 21.7894 5.46975 22.0001 6.00018 22.0001H18.0002C18.5306 22.0001 19.0393 21.7894 19.4144 21.4143C19.7895 21.0392 20.0002 20.5305 20.0002 20.0001V8.00009L14.0002 2.00009Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M13.9998 2.00009V8.00009H19.9998" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M15.9998 12.9999H7.99982" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M15.9998 17.0001H7.99982" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M9.99982 9H8.99982H7.99982" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										 </div>
+										 <div class="file-info">
+											<div class="file-title">
+												iOS 11 guidelines for UX/UI designers
+											</div>
+											<div class="file-size">
+												PDF file, 324 kb
+											</div>
+										 </div>
+										 <div class="load ml-auto">
+											<a href="#">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<g clip-path="url(#clip0_2_887)">
+													<path d="M8 17L12 21L16 17" stroke="#0275B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M12 12V21" stroke="#0275B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M20.88 18.09C21.7494 17.4786 22.4014 16.6061 22.7413 15.5991C23.0812 14.5921 23.0914 13.503 22.7704 12.4898C22.4494 11.4766 21.8139 10.5921 20.9561 9.96456C20.0983 9.33703 19.0628 8.99916 18 8.99999H16.74C16.4392 7.82787 15.8765 6.73924 15.0941 5.81607C14.3117 4.89291 13.3301 4.15925 12.2232 3.67035C11.1163 3.18144 9.91284 2.95002 8.70352 2.99351C7.4942 3.037 6.31051 3.35426 5.24155 3.92142C4.17259 4.48858 3.24622 5.29084 2.53218 6.26782C1.81814 7.2448 1.33505 8.37104 1.11925 9.56174C0.903464 10.7524 0.960604 11.9766 1.28637 13.142C1.61214 14.3074 2.19805 15.3838 2.99999 16.29" stroke="#0275B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													</g>
+													<defs>
+													<clipPath id="clip0_2_887">
+													<rect width="24" height="24" fill="white"/>
+													</clipPath>
+													</defs>
+												</svg>
+											</a>
+										 </div>
+									</div>
+									<div class="file d-flex a-center">
+										<div class="file-icon d-flex a-center j-center">
+										   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											   <path d="M14.0002 2.00009H6.00018C5.46975 2.00009 4.96104 2.21081 4.58597 2.58588C4.2109 2.96095 4.00018 3.46966 4.00018 4.00009V20.0001C4.00018 20.5305 4.2109 21.0392 4.58597 21.4143C4.96104 21.7894 5.46975 22.0001 6.00018 22.0001H18.0002C18.5306 22.0001 19.0393 21.7894 19.4144 21.4143C19.7895 21.0392 20.0002 20.5305 20.0002 20.0001V8.00009L14.0002 2.00009Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+											   <path d="M13.9998 2.00009V8.00009H19.9998" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+											   <path d="M15.9998 12.9999H7.99982" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+											   <path d="M15.9998 17.0001H7.99982" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+											   <path d="M9.99982 9H8.99982H7.99982" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+										   </svg>
+										</div>
+										<div class="file-info">
+										   <div class="file-title">
+												iOS 11 guidelines for developers
+										   </div>
+										   <div class="file-size">
+												PDF file, 245 kb
+										   </div>
+										</div>
+										<div class="load ml-auto">
+										   <a href="#">
+											   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												   <g clip-path="url(#clip0_2_887)">
+												   <path d="M8 17L12 21L16 17" stroke="#0275B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												   <path d="M12 12V21" stroke="#0275B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												   <path d="M20.88 18.09C21.7494 17.4786 22.4014 16.6061 22.7413 15.5991C23.0812 14.5921 23.0914 13.503 22.7704 12.4898C22.4494 11.4766 21.8139 10.5921 20.9561 9.96456C20.0983 9.33703 19.0628 8.99916 18 8.99999H16.74C16.4392 7.82787 15.8765 6.73924 15.0941 5.81607C14.3117 4.89291 13.3301 4.15925 12.2232 3.67035C11.1163 3.18144 9.91284 2.95002 8.70352 2.99351C7.4942 3.037 6.31051 3.35426 5.24155 3.92142C4.17259 4.48858 3.24622 5.29084 2.53218 6.26782C1.81814 7.2448 1.33505 8.37104 1.11925 9.56174C0.903464 10.7524 0.960604 11.9766 1.28637 13.142C1.61214 14.3074 2.19805 15.3838 2.99999 16.29" stroke="#0275B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												   </g>
+												   <defs>
+												   <clipPath id="clip0_2_887">
+												   <rect width="24" height="24" fill="white"/>
+												   </clipPath>
+												   </defs>
+											   </svg>
+										   </a>
+										</div>
+								   </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footing d-flex j-between">
+						<div class="d-flex">
+							<div class="contrtol d-flex">
+								<button class="active like likes">
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.66665 14.6667H2.66665C2.31302 14.6667 1.97389 14.5262 1.72384 14.2762C1.47379 14.0261 1.33331 13.687 1.33331 13.3333V8.66668C1.33331 8.31306 1.47379 7.97392 1.72384 7.72387C1.97389 7.47382 2.31302 7.33334 2.66665 7.33334H4.66665M9.33331 6.00001V3.33334C9.33331 2.80291 9.1226 2.2942 8.74753 1.91913C8.37245 1.54406 7.86375 1.33334 7.33331 1.33334L4.66665 7.33334V14.6667H12.1866C12.5082 14.6703 12.8202 14.5576 13.0653 14.3493C13.3103 14.1411 13.4718 13.8513 13.52 13.5333L14.44 7.53334C14.469 7.34225 14.4561 7.14713 14.4022 6.96151C14.3483 6.77589 14.2547 6.60421 14.1279 6.45835C14.0011 6.3125 13.844 6.19596 13.6677 6.11682C13.4914 6.03768 13.2999 5.99782 13.1066 6.00001H9.33331Z" stroke="#0275B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</button>
+								<span>
+									89
+								</span>
+							</div>
+							<div class="contrtol d-flex">
+								<button class="active">
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14 7.66666C14.0023 8.54657 13.7967 9.41458 13.4 10.2C12.9296 11.1412 12.2065 11.9328 11.3116 12.4862C10.4168 13.0396 9.3855 13.3329 8.33333 13.3333C7.45342 13.3356 6.58541 13.13 5.8 12.7333L2 14L3.26667 10.2C2.86995 9.41458 2.66437 8.54657 2.66667 7.66666C2.66707 6.61449 2.96041 5.58322 3.51381 4.68836C4.06722 3.79349 4.85884 3.07037 5.8 2.59999C6.58541 2.20328 7.45342 1.99769 8.33333 1.99999H8.66667C10.0562 2.07665 11.3687 2.66316 12.3528 3.64723C13.3368 4.63129 13.9233 5.94376 14 7.33332V7.66666Z" stroke="#0275B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</button>
+								<span>
+									7
+								</span>
+							</div>
+						</div>
+						<div class="sharing">
+							<button class="contrtol">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 5.33334C13.1046 5.33334 14 4.43791 14 3.33334C14 2.22877 13.1046 1.33334 12 1.33334C10.8954 1.33334 10 2.22877 10 3.33334C10 4.43791 10.8954 5.33334 12 5.33334Z" fill="#0275B1" stroke="#0275B1" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M4 10C5.10457 10 6 9.10457 6 8C6 6.89543 5.10457 6 4 6C2.89543 6 2 6.89543 2 8C2 9.10457 2.89543 10 4 10Z" fill="#0275B1" stroke="#0275B1" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M12 14.6667C13.1046 14.6667 14 13.7712 14 12.6667C14 11.5621 13.1046 10.6667 12 10.6667C10.8954 10.6667 10 11.5621 10 12.6667C10 13.7712 10.8954 14.6667 12 14.6667Z" fill="#0275B1" stroke="#0275B1" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M5.72672 9.00674L10.28 11.6601" stroke="#0275B1" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M10.2734 4.34009L5.72672 6.99342" stroke="#0275B1" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="aside ml-auto">
+			<div class="user-profile d-flex fl-direction a-center">
+				<div class="cover">
+					<img src="img/pictures/img-6.jpg" alt="cover">
+				</div>
+				<div class="aside-profle d-flex fl-direction a-center">
+					<div class="aside-profile__content d-flex a-center j-center fl-direction">
+						<div class="profile-avatar">
+							<img src="img/pictures/S1720106.JPG" alt="img">
+						</div>
+						<div class="profile-info">
+							<div class="profile-title">
+								Dmitry Kargaev
+								<span class="status-icon">
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M0.65901 0.65901C0 1.31802 0 2.37868 0 4.5V7.5C0 9.62132 0 10.682 0.65901 11.341C1.31802 12 2.37868 12 4.5 12H7.5C9.62132 12 10.682 12 11.341 11.341C12 10.682 12 9.62132 12 7.5V4.5C12 2.37868 12 1.31802 11.341 0.65901C10.682 0 9.62132 0 7.5 0H4.5C2.37868 0 1.31802 0 0.65901 0.65901ZM2.99508 3.75912C2.501 3.75912 2.1 3.35401 2.1 2.85456C2.1 2.3551 2.501 1.95 2.99508 1.95C3.48917 1.95 3.89016 2.3551 3.89016 2.85456C3.89016 3.35401 3.48968 3.75912 2.99508 3.75912ZM2.22787 10.05V4.40933H3.76229V10.05H2.22787ZM8.36557 10.05H9.9V6.58407C9.9 3.89039 7.0342 3.98833 6.31967 5.3144V4.40933H4.78525V10.05H6.31967V7.17634C6.31967 5.58003 8.36557 5.44927 8.36557 7.17634V10.05Z" fill="url(#paint0_linear_2_952)"/>
+										<defs>
+										<linearGradient id="paint0_linear_2_952" x1="6" y1="0" x2="6" y2="12" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#D8C281"/>
+										<stop offset="1" stop-color="#AC9B69"/>
+										</linearGradient>
+										</defs>
+									</svg>
+								</span>
+							</div>
+							<div class="profile-decrtiption">
+								Freelance UX/UI designer, 80+ projects in web design, mobile apps (iOS & android) and creative projects. Open to offers.
+							</div>
+						</div>
+	
+					</div>
+				</div>
+			</div>
+			<div class="profile-setting aside-content">
+				<button class="blue" id="setting">
+					write new article
+				</button>
+			</div>
+			<div class="user-group aside-content">
+				<div class="heading d-flex j-between">
+					my groups
+					<button>
+						Edit list
+					</button>
+				</div>
+				<div class="group-list" id="group"></div>
+				<div class="all-group"></div>
+			</div>
+			<div class="tags aside-content">
+				<div class="heading d-flex j-between">
+					Followed hashtags
+				</div>
+				<div class="tag d-flex fl-wrap">
+					<a href="#">#work</a>
+					<a href="#">#business</a>
+					<a href="#">#hr</a>
+					<a href="#">#userinterface</a>
+					<a href="#">#digital</a>
+					<a href="#">#userexperience</a>
+					<a href="#">#ux</a>
+					<a href="#">#ui</a>
+					<a href="#">#freelance</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<div class="overlay overlay-file">
+	<form action="#" class="popup">
+		<div class="popup-heading d-flex j-between a-center">
+			Загрузка файла
+			<button>
+				<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="cancel_24__Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="cancel_24__cancel_24"><path id="cancel_24__Bounds" d="M0 0h24v24H0z"></path><path d="M18.3 5.7a.99.99 0 0 0-1.4 0L12 10.6 7.1 5.7a.99.99 0 0 0-1.4 1.4l4.9 4.9-4.9 4.9a.99.99 0 0 0 1.4 1.4l4.9-4.9 4.9 4.9a.99.99 0 0 0 1.4-1.4L13.4 12l4.9-4.9a.99.99 0 0 0 0-1.4Z" id="cancel_24__Mask" fill="currentColor"></path></g></g></svg>
+			</button>
+		</div>
+		<div class="upload">
+			<label class="button-bg" for="file">Загрузить</label>
+			<input type="file" name="file" id="file">
+		</div>
+		<div class="progres">
+
+		</div>
+	</form>
+</div>
+<footer class="footer">
+	<div class="container container-main m-auto">
+		<div class="footer-inner d-flex j-between fl-wrap">
+			<div class="logo">
+				<a class="d-flex fl-direction" href="#">
+					<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M2.5262 2.5262C0 5.05241 0 9.11827 0 17.25V28.75C0 36.8817 0 40.9476 2.5262 43.4738C5.05241 46 9.11827 46 17.25 46H28.75C36.8817 46 40.9476 46 43.4738 43.4738C46 40.9476 46 36.8817 46 28.75V17.25C46 9.11827 46 5.05241 43.4738 2.5262C40.9476 0 36.8817 0 28.75 0H17.25C9.11827 0 5.05241 0 2.5262 2.5262ZM11.4811 14.4099C9.58715 14.4099 8.05 12.8571 8.05 10.9425C8.05 9.02789 9.58715 7.475 11.4811 7.475C13.3751 7.475 14.9123 9.02789 14.9123 10.9425C14.9123 12.8571 13.3771 14.4099 11.4811 14.4099ZM8.54016 38.525V16.9024H14.4221V38.525H8.54016ZM32.068 38.525H37.95V25.2389C37.95 14.9132 26.9644 15.2886 24.2254 20.3719V16.9024H18.3434V38.525H24.2254V27.5093C24.2254 21.3901 32.068 20.8889 32.068 27.5093V38.525Z" fill="url(#paint0_linear_4301_39)"/>
+						<defs>
+						<linearGradient id="paint0_linear_4301_39" x1="23" y1="0" x2="23" y2="46" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#0077B5"/>
+						<stop offset="1" stop-color="#0E6795"/>
+						</linearGradient>
+						</defs>
+					</svg>
+					<span>LinkedIn</span>
+				</a>
+			</div>
+			<div class="navigation">
+				<p class="footer-title">Navigation</p>
+				<div class="navigation-wrapper d-flex j-between">
+					<ul class="footer-list">
+						<li>
+							<a href="#">
+								About
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Careers
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Advertising
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Small Business
+							</a>
+						</li>
+					</ul>
+					<ul class="footer-list">
+						<li>
+							<a href="#">
+								Talent Solutions
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Marketing Solutions
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Sales Solutions
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Safery Center
+							</a>
+						</li>
+					</ul>
+					<ul class="footer-list">
+						<li>
+							<a href="#">
+								Community Guidelines
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Privacy & Terms 
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Mobile App
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="setting">
+				<p class="footer-title">Fast access</p>
+				<button class="d-flex a-center j-between blue">
+					Questions?
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8 14.6666C11.6819 14.6666 14.6667 11.6819 14.6667 7.99998C14.6667 4.31808 11.6819 1.33331 8 1.33331C4.3181 1.33331 1.33333 4.31808 1.33333 7.99998C1.33333 11.6819 4.3181 14.6666 8 14.6666Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M6.06006 5.99995C6.21679 5.5544 6.52616 5.17869 6.93336 4.93937C7.34056 4.70006 7.81932 4.61258 8.28484 4.69243C8.75036 4.77228 9.1726 5.0143 9.47678 5.37564C9.78095 5.73697 9.94743 6.1943 9.94672 6.66662C9.94672 7.99995 7.94672 8.66662 7.94672 8.66662" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M8 11.3333H8.00667" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</button>
+				<button class="d-flex a-center j-between border">
+					Settings
+					<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_4321_23)">
+						<path d="M8.57861 10.1519C9.68318 10.1519 10.5786 9.25643 10.5786 8.15186C10.5786 7.04729 9.68318 6.15186 8.57861 6.15186C7.47404 6.15186 6.57861 7.04729 6.57861 8.15186C6.57861 9.25643 7.47404 10.1519 8.57861 10.1519Z" stroke="#0275B1" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M13.512 10.1519C13.4232 10.353 13.3967 10.576 13.4359 10.7923C13.4752 11.0085 13.5783 11.2081 13.732 11.3652L13.772 11.4052C13.8959 11.529 13.9943 11.6761 14.0614 11.838C14.1285 11.9998 14.163 12.1733 14.163 12.3485C14.163 12.5238 14.1285 12.6973 14.0614 12.8591C13.9943 13.021 13.8959 13.168 13.772 13.2919C13.6481 13.4158 13.5011 13.5142 13.3392 13.5813C13.1773 13.6484 13.0038 13.6829 12.8286 13.6829C12.6534 13.6829 12.4799 13.6484 12.318 13.5813C12.1562 13.5142 12.0091 13.4158 11.8853 13.2919L11.8453 13.2519C11.6882 13.0982 11.4886 12.9951 11.2723 12.9559C11.0561 12.9167 10.833 12.9431 10.632 13.0319C10.4348 13.1164 10.2666 13.2567 10.1482 13.4356C10.0297 13.6144 9.96614 13.824 9.96528 14.0385V14.1519C9.96528 14.5055 9.82481 14.8446 9.57476 15.0947C9.32471 15.3447 8.98557 15.4852 8.63195 15.4852C8.27833 15.4852 7.93919 15.3447 7.68914 15.0947C7.43909 14.8446 7.29862 14.5055 7.29862 14.1519V14.0919C7.29346 13.8712 7.22203 13.6572 7.09363 13.4777C6.96522 13.2981 6.78577 13.1614 6.57862 13.0852C6.37754 12.9965 6.15449 12.97 5.93823 13.0092C5.72196 13.0484 5.5224 13.1515 5.36528 13.3052L5.32528 13.3452C5.20145 13.4692 5.0544 13.5675 4.89254 13.6346C4.73067 13.7017 4.55717 13.7363 4.38195 13.7363C4.20673 13.7363 4.03323 13.7017 3.87136 13.6346C3.7095 13.5675 3.56245 13.4692 3.43862 13.3452C3.31465 13.2214 3.2163 13.0743 3.14921 12.9125C3.08211 12.7506 3.04757 12.5771 3.04757 12.4019C3.04757 12.2267 3.08211 12.0532 3.14921 11.8913C3.2163 11.7294 3.31465 11.5824 3.43862 11.4585L3.47862 11.4185C3.63231 11.2614 3.73541 11.0619 3.77462 10.8456C3.81383 10.6293 3.78736 10.4063 3.69862 10.2052C3.61411 10.008 3.47379 9.83986 3.29493 9.72141C3.11607 9.60296 2.90648 9.5394 2.69195 9.53854H2.57862C2.225 9.53854 1.88586 9.39807 1.63581 9.14802C1.38576 8.89797 1.24529 8.55883 1.24529 8.20521C1.24529 7.85159 1.38576 7.51245 1.63581 7.2624C1.88586 7.01235 2.225 6.87188 2.57862 6.87188H2.63862C2.85928 6.86671 3.07329 6.79529 3.25282 6.66688C3.43235 6.53848 3.5691 6.35903 3.64528 6.15188C3.73403 5.9508 3.7605 5.72775 3.72129 5.51148C3.68208 5.29522 3.57898 5.09566 3.42528 4.93854L3.38528 4.89854C3.26132 4.77471 3.16297 4.62766 3.09587 4.4658C3.02877 4.30393 2.99424 4.13043 2.99424 3.95521C2.99424 3.77999 3.02877 3.60649 3.09587 3.44462C3.16297 3.28276 3.26132 3.13571 3.38528 3.01188C3.50912 2.88791 3.65617 2.78956 3.81803 2.72246C3.9799 2.65536 4.1534 2.62083 4.32862 2.62083C4.50384 2.62083 4.67734 2.65536 4.83921 2.72246C5.00107 2.78956 5.14812 2.88791 5.27195 3.01188L5.31195 3.05188C5.46907 3.20557 5.66863 3.30867 5.88489 3.34788C6.10116 3.38709 6.32421 3.36062 6.52528 3.27188H6.57862C6.7758 3.18737 6.94396 3.04705 7.06241 2.86819C7.18086 2.68933 7.24443 2.47973 7.24528 2.26521V2.15188C7.24528 1.79825 7.38576 1.45912 7.63581 1.20907C7.88586 0.959018 8.225 0.818542 8.57862 0.818542C8.93224 0.818542 9.27138 0.959018 9.52143 1.20907C9.77148 1.45912 9.91195 1.79825 9.91195 2.15188V2.21188C9.91281 2.4264 9.97637 2.63599 10.0948 2.81485C10.2133 2.99371 10.3814 3.13403 10.5786 3.21854C10.7797 3.30729 11.0027 3.33376 11.219 3.29455C11.4353 3.25533 11.6348 3.15223 11.792 2.99854L11.832 2.95854C11.9558 2.83457 12.1028 2.73623 12.2647 2.66913C12.4266 2.60203 12.6001 2.56749 12.7753 2.56749C12.9505 2.56749 13.124 2.60203 13.2859 2.66913C13.4477 2.73623 13.5948 2.83457 13.7186 2.95854C13.8426 3.08237 13.9409 3.22942 14.008 3.39129C14.0751 3.55315 14.1097 3.72665 14.1097 3.90188C14.1097 4.0771 14.0751 4.2506 14.008 4.41246C13.9409 4.57433 13.8426 4.72138 13.7186 4.84521L13.6786 4.88521C13.5249 5.04233 13.4218 5.24189 13.3826 5.45815C13.3434 5.67441 13.3699 5.89746 13.4586 6.09854V6.15188C13.5431 6.34905 13.6834 6.51722 13.8623 6.63567C14.0412 6.75412 14.2508 6.81769 14.4653 6.81854H14.5786C14.9322 6.81854 15.2714 6.95902 15.5214 7.20907C15.7715 7.45912 15.912 7.79825 15.912 8.15188C15.912 8.5055 15.7715 8.84464 15.5214 9.09468C15.2714 9.34473 14.9322 9.48521 14.5786 9.48521H14.5186C14.3041 9.48606 14.0945 9.54963 13.9156 9.66808C13.7368 9.78653 13.5965 9.9547 13.512 10.1519V10.1519Z" stroke="#0275B1" stroke-linecap="round" stroke-linejoin="round"/>
+						</g>
+						<defs>
+						<clipPath id="clip0_4321_23">
+						<rect width="16" height="16" fill="white" transform="translate(0.578613 0.151855)"/>
+						</clipPath>
+						</defs>
+					</svg>
+				</button>
+			</div>
+			<div class="language">
+				<p class="footer-title">Language</p>
+				<div class="triger">
+					<section>
+						<option value="English">English</option>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Подключение скриптов начало -->
+<script src="js/app.js" type="module"></script>
+<script src="catalog/groups.js"></script>
+<script src="catalog/posts.js"></script>
+<!-- Подключение скриптов конец -->
+</body>
+</html>
